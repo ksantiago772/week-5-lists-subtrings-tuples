@@ -79,27 +79,35 @@ my_list3.insert(3,"phone")
 ###### print the new list out
 print(my_list3)
 ##### reverse the list
-
+my_list3.reverse()
 ###### print the new list out
+print(my_list3)
 ###### print out the length of the new list
 
 #####################################challenge 2#######################################################
 # Join the following list into a string, separating each item with a space. Use the appropriate list/string method, and display the result.
 word_list = ["Simple", "is", "better", "than", "complex."]
+#whatever is inside " " will be put into the , 
+print(" ".join(word_list))
+
 
 # Print the following text in uppercase, using the specific string method:
 
 text1 = "Especially in electronic communications, writing in all caps is equivalent to yelling."
+text1.upper
+print(text1)
 
 #substrings
 # Take every third character starting from the ninth to the end of the sentence, and print the result.
 
 text2 = "Never trust a computer you can't throw out a window"
-
+print(text2[8::3])
+#starts on 8, goes all the way to the end, skips 3 characters
 # Reverses the position of all the characters in the following sentence and displays the result on the screen.
 
 text3 = "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
-# print(text3.reverse())
+#print(text3.reverse())      THIS IS WRONG
+print(text3[::-1])
 
 # Extract the first word of the following sentence using slicing, and display it on the screen:
 sentence ="Controlling complexity is the essence of programming"
